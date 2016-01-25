@@ -32,7 +32,13 @@ aside {
 }
 
 /* Picture */
-
+#girlcoder img {
+	height: 200px;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 
 /* Blog */
