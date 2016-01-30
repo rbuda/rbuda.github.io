@@ -4,12 +4,18 @@ nav {
 	text-align: center;
 	padding: 10px 0;
 	margin: 20px 0 0;
+	font-size: 30px;
 }
 
 nav ul {
 	list-style: none;
 	margin: 0 10px;
 	padding: 0;
+}
+
+a {
+	text-decoration: none;
+
 }
 
 nav li {
@@ -41,20 +47,25 @@ aside {
 }
 
 
-/* Blog */
+/* Index Body */
 
-#blog {
-	border: solid;
+#main-wrapper {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 	float: left;
-	position: fixed;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: 0px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
-#blog h1 {
+#main-wrapper h1 {
 	font-size: 3em;
 	font-style: oblique;
 }
 
-#blog p {
+#main-wrapper p {
 	font-size: 1.5em;
 
 }
@@ -75,14 +86,15 @@ footer {
 .social-icon {
 	width: 30px;
 	height: 30px;
-	margin: 0 5px;
+	margin: 0 10px;
 }
+
 
 /* Colors */
 
 body {
 	background-position: center-top;
-	background-image: <img src = assets/imgs/bground.jpg>;
+	background-image: url(https://raw.githubusercontent.com/rbuda/rbuda.github.io/master/assets/imgs/bground.jpg);
 }
 
 aside {
@@ -90,9 +102,9 @@ aside {
 }
 
 footer {
-	background-color: #806c15;
 
 }
+
 
 
 
