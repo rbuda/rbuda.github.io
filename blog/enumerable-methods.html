@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title>Ryan Nebuda Website</title>
+      <link rel="stylesheet" type="text/css" href="../assets/stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../assets/stylesheets/blog.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+
+         <div>
+            <h1>Arrays & Hashes</h1>
+            <p>Arrays and Hashes are the essential elements in beginner ruby that allow the user to store and access data.  This data is tied to a name. If you were to make a grocery list the name or variable would be called grocery_list.  Arrays will store numbers or words within a set of brackets like this:</p>
+            <pre><code>grocery_list = ["eggs", "bread", "milk", "ham", "cheese"]</code></pre>
+            <p>Notice how each word is in quotations? This is important for words but if a user wants to put in numbers or integers, they wouldn't normally need to be in quotes. Let's say a user only had time to go to the store and get one thing. If one wanted to only get the first item on the list they would call that value using:</p>
+            <pre><code>puts grocery_list[0]</code></pre>
+            <pre><code>>>"eggs"</code></pre>
+            <p>Notice how number 0 gets the first number? This is because an array has all its' data indexed for the user to reference. The first number is 0 which means "cheese" is index number 4. Just remember to always start off counting at zero. This is easy right? Whey would you need to have any other form of data storage? Well, arrays are great for storing data but is our grocery list that realistic? What if you get dairy items at the grocery store but get bread from a bakery and meat from a butcher shop? That can make our list confusing. Hashes make this easier. Let's change our list and categorize with the code below:</p>
+            <pre><code>grocery_list = {"meat" => "paulina", "eggs" => "jewel", "bread" => "dinkels", "cheese" => "jewel", "milk" => "jewel"}</code></pre>
+            <p>The hash name is grocery_list. Each name stored in the hash is either a key or value. The keys are first followed by values - "meat" is a key and "paulina" is a value. If we were going to get bread but couldn't remember where we were to get it, we could call that by:</p>
+            <pre><code>puts grocery_list ["bread"]</code></pre>
+            <pre><code>>>dinkels</code></pre>
+            <p>You could call all the items on your list with:</p>
+            <pre><code>grocery_list.each do |key, value|</code></pre>
+            <pre><code>&nbsp puts "#{key}:#{value}"</code></pre>
+            <pre><code>end</code></pre>
+            <pre><code>>>meat:paulina
+            <p>You can see the basics for Arrays and Hashes. Each has its' advantages and hashes definitely offers a little more flexibility.  
+   eggs:jewel
+   bread:dinkels
+   cheese:jewel
+   milk:jewel</code></pre>
+            <p>
+         </div>
+      <footer>
+         <div>
+            <a href="tel:312.550.9571"><img src="../assets/imgs/phone.png" alt="phone logo" class="social-icon"></a>
+            <a href="mailto:ryannebuda@gmail.com"><img src="../assets/imgs/mail.png" alt="mail logo" class="social-icon"></a>
+         </div> 
+      </footer>
+   </body>
+</html>
