@@ -18,6 +18,10 @@ a {
 
 }
 
+a:hover {
+	background-color: #f5f5f5;
+}
+
 nav li {
 	display: inline-block;
 }
@@ -27,37 +31,20 @@ nav a {
 	padding: 15px 10px;
 }
 
-/* Aside */
-
-aside {
-	float: right;
-	padding-right: 10px;
-	border-style: dotted;
-	border-width: 1px;
-	border-spacing: 50px 50px;
-}
-
-/* Picture */
-#girlcoder img {
-	height: 200px;
-	max-width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
-
-
 /* Index Body */
 
 #main-wrapper {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	float: left;
 	position: static;
 	background-color: #f5f5f5;
-	padding-top: 0px;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
 	margin-left: 20%;
 	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 0%;
 }
 
 #main-wrapper h1 {
@@ -68,6 +55,161 @@ aside {
 #main-wrapper p {
 	font-size: 1.5em;
 
+}
+
+#main-wrapper2 {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 2%;
+}
+
+#main-wrapper2 h1 {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+#main-wrapper2 p {
+	font-size: 1.5em;
+
+}
+
+#main-wrapper3 {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 2%;
+}
+
+#main-wrapper3 h1 {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+#main-wrapper3 p {
+	font-size: 1.5em;
+
+}
+
+#main-wrapper4 {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 2%;
+}
+
+#main-wrapper4 h1 {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+#main-wrapper4 p {
+	font-size: 1.5em;
+
+}
+
+/* Blog-Template*/
+
+aside {
+	background-color: #f5f5f5;
+	display: inline-block;
+	margin-left: 80%;
+	margin-right: 5%;
+	padding-right: .5em;
+	padding-left: .5em;
+	padding-bottom: 1.5em;
+	list-style: none;
+}
+
+/* Blog Body */
+
+#blog-wrapper {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	float: left;
+	position: absolute;
+	background-color: #f5f5f5;
+	padding-top: 0px;
+	margin-left: 15%;
+	margin-right: 22%;
+	padding-left: .5em;
+}
+
+#blog-wrapper h1 {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+#blog-wrapper p {
+	font-size: 1.5em;
+
+}
+
+/* Picture */
+
+#girlcoder img {
+	height: 200px;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* Contact */
+
+#contact-wrapper {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 0%;
+}
+
+#contact-wrapper h1 {
+	font-size: 3em;
+	font-style: oblique;
+	padding-left: .5em;
+}
+
+#contact-wrapper p {
+	font-size: 1.5em;
+	padding-left: .5em;
+}
+
+#contact-wrapper li {
+	list-style: none;
+	text-align: center;
+	font-size: 2em;
 }
 
 /* Footer */
