@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title>Ryan Nebuda Website</title>
+      <link rel="stylesheet" type="text/css" href="../assets/stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../assets/stylesheets/blog.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="blog-template.html">Blog</a></li>
+               <li><a href="../contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+         <div id = "blogpost-wrapper">
+            <h1>Enumerable#find</h1>
+            <p>Enumerable methods produce highly readable code. They shorten up longer methods that required loops to get a result. The enumerable method we are going to dive deep into is the find method. Let's say you wanted to look at numbers 1 through 3 and find all that were divisible by both 5 and 7. You could do something like this that would count until it reached a number that met our divisible by 5 AND 7 requirement:<p>
+            <pre><code>for i in 1..300
+   if i % 5 == 0 && i % 7 == 0 then
+      break
+   end
+   puts i
+end</code></pre>
+            <p>This would print out 1 through 34 and we would know that 35 is the answer. But this is loooonnnggg and what if I wanted to count up to 300 and find all the numbers that met my criteria? This would be more code added to the loop making it 10+ lines. Here is a simpler way to do what put above but with the enumerable #find:<p>
+            <pre><code>(1..300).find { |num| num % 5 == 0 and num % 7 == 0 }</code></pre>
+            <p>This would print 35 for us. That obviously looks cleaner. In the ()'s we put 1..300 meaning including 1 and up to and including 300. What if we wanted to find out ALL the numbers that met our divisible criteria and not just the first? The answer is easier than you think:<p>
+            <pre><code>(1..300).find.all { |num| num % 5 == 0 and num % 7 == 0 }</code></pre>
+            <p>This returns 35, 70, 105, 140, 175, 210, 245, 280. Much easier to use the enumerable find to FIND what is in a range.<p>
+         </div>
+      <footer>
+         <div>
+            <a href="http://www.linkedin.com/in/nebuda"><img src="../assets/imgs/ghub.png" alt="github" class="social-icon"></a>
+            <a href="http://www.linkedin.com/in/nebuda"><img src="../assets/imgs/linkedIn_logo.png" alt="linkedin" class="social-icon"></a>
+            <a href="http://www.facebook.com/nebuda"><img src="../assets/imgs/facebook.png" alt="facebook" class="social-icon"></a>
+            <a href="http://www.twitter.com/ryannebuda"><img src="../assets/imgs/twitter.jpeg" alt="twitter" class="social-icon"></a>
+         </div> 
+      </footer>
+   </body>
+</html>
