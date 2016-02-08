@@ -18,19 +18,36 @@
          </nav>
       </header>
          <div id = "blogpost-wrapper">
-            <h1>Enumerable#find</h1>
-            <p>Enumerable methods produce highly readable code. They shorten up longer methods that required loops to get a result. The enumerable method we are going to dive deep into is the find method. Let's say you wanted to look at numbers 1 through 3 and find all that were divisible by both 5 and 7. You could do something like this that would count until it reached a number that met our divisible by 5 AND 7 requirement:<p>
-            <pre><code>for i in 1..300
-   if i % 5 == 0 && i % 7 == 0 then
-      break
+            <h1>Ruby Classes</h1>
+            <p>Ruby is an object-oriented programming language. Its' foundation is set on objects with classes and methods and variables within these classes.  What are classes? To dive into this more let's say you wanted to create a class of football players and wanted to store for each player their position, number & team.  You could do so like this:<p><pre><code>class FootballPlayers
+   def initialize(name, position, number, team)
+      @name = name
+      @position = position
+      @number = number
+      @team = team
    end
-   puts i
 end</code></pre>
-            <p>This would print out 1 through 34 and we would know that 35 is the answer. But this is loooonnnggg and what if I wanted to count up to 300 and find all the numbers that met my criteria? This would be more code added to the loop making it 10+ lines. Here is a simpler way to do what put above but with the enumerable #find:<p>
-            <pre><code>(1..300).find { |num| num % 5 == 0 and num % 7 == 0 }</code></pre>
-            <p>This would print 35 for us. That obviously looks cleaner. In the ()'s we put 1..300 meaning including 1 and up to and including 300. What if we wanted to find out ALL the numbers that met our divisible criteria and not just the first? The answer is easier than you think:<p>
-            <pre><code>(1..300).find.all { |num| num % 5 == 0 and num % 7 == 0 }</code></pre>
-            <p>This returns 35, 70, 105, 140, 175, 210, 245, 280. Much easier to use the enumerable find to FIND what is in a range.<p>
+            <p>We've told the class to store our arguments into instance variables.  These instance variables are always going to start with the @ sign and be able to be accessed throughout the class.  Normal variables are only able to be accessed within their method so this gives us more flexibility with instance variables.  Let's add some methods:<p><pre><code>class FootballPlayers
+   def initialize(name, position, number, team)
+      @name = name
+      @position = position
+      @number = number
+      @team = team
+   end
+
+   def number
+      puts "{@number} is my favorite!"
+   end
+
+   def profile
+      puts "#{@name} belongs on the #{team} as their #{position}!"
+   end   
+end
+</code></pre>
+            <p>This is similar to the ruby methods we've seen thus far.  This allows us to create multiple instances of classes.  Now we can send a player profile to the class to be stored in that instance.<p><pre><code>manning = FootballPlayers.new("Peyton Manning", "QB", 18, "Broncons")</code></pre><p>What we'll get is:<p><pre><code>=>"18 is my favorite!"
+=>"Peyton Manning belongs on the Broncos as their QB!"
+            </code></pre>
+            <p>This allows us to call the manning FootballPlayers class later to see the instance variables we've stored for manning.  Hope this helps!</p>
          </div>
       <footer>
          <div>
