@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title>Ryan Nebuda Website</title>
+      <link rel="stylesheet" type="text/css" href="../assets/stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../assets/stylesheets/blog.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="../projects.html">Projects</a></li>
+               <li><a href="blog-template.html">Blog</a></li>
+               <li><a href="../about.html">About</a></li>
+               <li><a href="../contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+         <div id = "blogpost-wrapper">
+            <h1>JavaScript: Canvas</h1>
+            <p>Up until this point Ruby has been my focus.  This week was the first I was truly exposed to JavaScript.  JavaScript has many fundamental differences from Ruby.  I found one very interesting - it's ability to create graphics for gameplay with HTML5.  I found four ways to do this with JavaScript: WebGL, Websocket, SVG and Canvas.  This section will focus on Canvas.<p>
+            <p>A canvas is just like it sounds.  Similar to a artists' canvas, this is a predefined area on a HTML page that allows for graphics display.  Its' size is up to the user.  To add a canvas to an HTML page you would add a canvas id between body and script tags:<p>
+            <pre><code>
+            canvas id="myCanvas" width="480" height="320"
+            </code></pre>
+            <p>The above example gives it an id and we are declaring the height and width of our drawing board or canvas.  If you wanted it to stand out more you could give it a border with a style like we did in CSS.  Within the script tags of your html file, you will add code to get the context of the canvas to appear on your page:<p>
+            <pre><code>
+            var canvas = document.getElementById("myCanvas");
+            </code></pre>
+            <p>Now we need to tell the canvas what type of context it will run.  I won't touch upon the options the user has rather than just tell you the canvas will be 2 dimensional.<p>
+            <pre><code>
+            var ctx = canvas.getContext("2D");
+            </code></pre>
+            <p>Now we have our canvas.  Let's draw on it:<p>
+            <pre><code>
+            ctx.beginPath();
+            ctx.rect(20, 40, 50, 50);
+            ctx.fillStyle = "#FF0000";
+            ctx.fill();
+            ctx.closePath();
+            </code></pre>
+            <p>Let's look at what we've created.  beginPath() & closePath() are methods that are going to run a continous loop to each other.  Since the canvas is graphical, it will always be updating.  Once the code runs to closePath(), it will loop back to beginPath() and run again.  You will need to tell it how many milliseconds it should load but that's for another time.<p>
+            <p>The ctx.rect stands for context rectange.  We're drawing a rectange! 20 and 40 are the x and y coordinates.  20 is the distance from the left and 40 is the distance from the top our rectangle will start.  50 and 50 are its' height and width.<p>
+            <p>ctx.fillStyle is the color of rectange.  In this case it is red.  ctx.fill() is the method to actually color our rectangle.  Without it our rectangle will not be visible.<p>
+            <p>This is a basic start to using the canvas.  Many more variables are to be created adding movement to each object.  I'd recommend researching on MDN for all the options a canvas gives its' user.<p>
+         </div>
+      <footer>
+         <div>
+            <a href="http://www.linkedin.com/in/nebuda"><img src="../assets/imgs/ghub.png" alt="github" class="social-icon"></a>
+            <a href="http://www.linkedin.com/in/nebuda"><img src="../assets/imgs/linkedIn_logo.png" alt="linkedin" class="social-icon"></a>
+            <a href="http://www.facebook.com/nebuda"><img src="../assets/imgs/facebook.png" alt="facebook" class="social-icon"></a>
+            <a href="http://www.twitter.com/ryannebuda"><img src="../assets/imgs/twitter.jpeg" alt="twitter" class="social-icon"></a>
+         </div> 
+      </footer>
+   </body>
+</html>
