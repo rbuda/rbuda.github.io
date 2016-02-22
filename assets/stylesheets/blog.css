@@ -132,6 +132,56 @@ nav a {
 
 }
 
+#main-wrapper5 {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 2%;
+}
+
+#main-wrapper5 h1 {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+#main-wrapper5 p {
+	font-size: 1.5em;
+
+}
+
+#main-wrapper6 {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	position: static;
+	background-color: #f5f5f5;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: .5em;
+	margin-top: 2%;
+}
+
+#main-wrapper6 h1 {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+#main-wrapper6 p {
+	font-size: 1.5em;
+
+}
+
 /* Blog-Template*/
 
 aside {
